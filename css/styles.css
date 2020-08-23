@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+table, th, td {
+    border: 0cm;
+  }
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("img.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

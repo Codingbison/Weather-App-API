@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js"></script>
+<title>Weather Data API</title>
+</head>
+<body>
+    
+    <div class="container my-5">
+        <h1 class="text-center title">Weather in</h1>
+        <form action="" class="search-location">
+            <input type="text"
+                   name="city"
+                   placeholder="What city?"
+                   autocomplete="off"
+                   id="" class="form-control text-muted form-rounded p-4 shadow-sm">
+                   <button class="btn btn-primary btn-lg btn-block" onclick="event.preventDefault(); getWeatherData()">Search</button>
+        
+                </form>
+
+        <div class="card rounded my-3 shadow-lg back-card">
+
+            <div class="card-top text-center">
+                <div class="city-name my-3">
+                    
+                </div>
+                
+            </div>
+            <table class="center">
+                <tr>
+                  <th>High</th>
+                  <th>Low</th>
+                  <th>Forecast</th>
+                  <th>Humidity</th>
+                </tr>
+                <tr>
+                    <td id="Temphigh"></td>
+                    <td id="Templow"></td>
+                    <td id="Forecast"></td>
+                    <td id="Humidity"></td>
+                </tr>
+              </table> 
+        </div>
+
+    </div>
+
+<!--
+    <div class="bg">
+    <form action=""> 
+        <div class="form-group">
+          <label for="City">Weather Data API</label>
+          <input type="text" class="form-control" name= "city" placeholder="What city?">
+        </div>
+
+    </form>
+  <table class="center">
+        <tr>
+          <th>High</th>
+          <th>Low</th>
+          <th>Forecast</th>
+          <th>Humidity</th>
+        </tr>
+        <tr>
+            <td id="Temphigh"></td>
+            <td id="Templow"></td>
+            <td id="Forecast"></td>
+            <td id="Humidity"></td>
+        </tr>
+      </table> 
+
+ <form>
+        <div class="form-group">
+          <label>High Temperature</label>
+          <input class="form-control" id="Temphigh" placeholder="High Temperature">
+        </div>
+        <div class="form-group">
+          <label>Low Temperture</label>
+          <input type="password" class="form-control" id="Templow" placeholder="Low Temperature">
+        </div>
+        <div class="form-group">
+            <label>Forecast</label>
+            <input type="password" class="form-control" id="Forecast" placeholder="Forecast">
+          </div>
+          <div class="form-group">
+            <label>Humidity</label>
+            <input type="password" class="form-control" id="Humidity" placeholder="Humidity">
+          </div>
+
+    </div>
+    <div class="card">
+        <div class="Temphigh">
+
+        </div>
+      </div>
+    -->
+</body>
+</html>
