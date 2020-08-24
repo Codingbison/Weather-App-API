@@ -8,7 +8,7 @@ function temperatureConverter(valNum) {
 async function getWeatherData(){
     city = document.getElementsByName("city")[0].value;
     console.log(city)
-    await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5998cc7be6bf85d82161ab58920ec663`)
+    await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&API_key_here`)
         .then(data => data.json())
         .then(rawData => {
             console.log(rawData)
